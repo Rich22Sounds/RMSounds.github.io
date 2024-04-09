@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PersonalSite.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Richard M. Soundmaster</title>
+    <script>
+        $(document).ready(function(){
+            $("nav div").click(function(){
+                $("nav ul").slideToggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Richard M. Sound technician</h1>
+        <h2>Recording | Mixing | Mastering | Creating</h2>
+    </header>
+    <nav>
+        <div>&#x2630;</div>
+      <ul>
+        <li id="leftOne"><a href="PersonalSite.html">Domov</a></li>
+        <li><a href="PSAboutMe.html">O mě</a></li>
+        <li><a class="active" href="PSWork.html">Práce</a></li>
+        <li><a href="PSReferences.html">Reference</a></li>
+        <li><a href="PSContact.html">Kontakt</a></li>
+    </ul>
+</nav>
+    <main>
+        <section>
+            <h1>Práce</h1>
+            <p>Zde jsou veškteré mé práce. Jde jak o zvukové nahrávky tak i videa na kterých jsem se podílel.</p>
+            <p>Jsou zde jak práce které jsem dával na přijímačky, inviduální práce nebo také i kolektivní.</p>
+            <h1>Nahrávky</h1>
+            <h2 id=Prace>Velký princ</h2>
+            <p>Příběh osoby zažívající dennodenní rutinu, kterou může každý z nás znát. Ráno ho vzbudí otravný budík, příprava kávy, 
+                dokonání biologických potřeb a cesta z domu do své práce od nevidím do nevidím.</p>
+            <p>Práce pro něj je taková, že si ji ani moc neužívá. Je to kancelářská práce jako v klasickém korporátu.</p>
+            <p>V průběhu práce mu ale ze stolu spadne CD audioknihy s Malým princem, který mu změní pohled na svět. 
+                Díky Malému princi si uvědomí spoustu věcí a díky tomu dokáže vzdorovat hektické práci plné hlasitých zvonění a dalších otravných ruchů.</p>
+            <audio controls autoplay>
+                <source src="Nahravka1.wav" type="audio/ogg">
+                <source src="horse.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio>
+              <h2 id=Prace>Cyklus života</h2>
+              <p>Tato zvuková povídka mapuje cyklus života, počínaje nadějí a radostí nově narozeného člověka. Dále 
+                nás provází růstem, prací, setkáními a nevyhnutelně směřuje k okamžiku, kdy postava čelí bolestné 
+                ztrátě své milované.</p>
+            <p>Mým záměrem bylo vytvořit dílo, které je lehké, a přesto zahrnuje hru s dramatickými prvky příběhu. 
+                Chtěl jsem, aby každý posluchač mohl najít spojení s určitým úsekem, přičemž jsem si byl vědom 
+                nutnosti zachovávat citlivý přístup.</p>
+            <p>Konec přináší návrat klidu a přijetí cyklu života jako celku, i přes tragickou ztrátu milované osoby.</p>
+            <audio controls autoplay>
+                <source src="Nahravka2.wav" type="audio/ogg">
+                <source src="horse.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio>
+              <h2 id=Prace>Radost</h2>
+              <p>Chtěl jsem zde zachytit moment osoby procházející se lesem po cestě kde si čistí mysl a vzpomíná na dětsví. </p>
+            <audio controls autoplay>
+                <source src="Nahravka3.wav" type="audio/ogg">
+                <source src="horse.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2022 Richard M. Sound technician. Všechna práva vyhrazena.</p>
+        <div class="socials">
+            <a href="https://www.facebook.com/richard.soundmaster" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/in/richard-soundmaster" target="_blank">LinkedIn</a>
+            <a href="https://github.com/richard-soundmaster" target="_blank">GitHub</a>
+        </div>
+    </footer>
+</body>
+</html>
