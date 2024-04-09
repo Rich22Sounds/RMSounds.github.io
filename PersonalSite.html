@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PersonalSite.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Richard M. Soundmaster</title>
+    <script>
+        $(document).ready(function(){
+            $("nav div").click(function(){
+                $("nav ul").slideToggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <img id="wave" src="audio-wave.gif" alt="Italian Trulli"><h1>Richard M. Sound technician</h1>
+        <h2>Recording | Mixing | Mastering | Creating</h2>
+    </header>
+    <nav>
+        <div>&#x2630;</div>
+      <ul>
+        <li id="leftOne"><a class="active" href="PersonalSite.html">Domov</a></li>
+        <li><a href="PSAboutMe.html">O mě</a></li>
+        <li><a href="PSWork.html">Práce</a></li>
+        <li><a href="PSReferences.html">Reference</a></li>
+        <li><a href="PSContact.html">Kontakt</a></li>
+    </ul>
+</nav>
+    <main>
+        <section>
+
+            <h1>Úvod</h1>
+
+            <p>Vítejte na mém osobním webu. Zde zaznamenávám své nabité zkušenosti, odvedené práce a úspěchy celkově.</p>
+
+        </section>
+
+        <section>
+            <h1>Co se zde mužete dozvědět?</h1>
+            <div id=About_me>
+                <h2>O mě</h2>
+                <p>Kde jsem studoval, kde jsem pracoval a má cesta ke zvuku jako takovém.</p>
+            </div>
+            
+            <div id=Work>
+                <h2>Práce</h2>
+                <p>Zvukové nahrávky, videa na kterých jsem se podílel a jiné zajímavé projekty.</p>
+            </div>
+            
+            <div id=Reference>
+                <h2>Reference</h2>
+                <p>Recenze a doporučení od klientů a kolegů se kterými jsem pracoval.</p>
+            </div>
+            <div id=Contact>
+                <h2>Kontakt</h2>
+                <p>Mé dostupné kontakty kde budu k vám plně k dispozici.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+      <p>&copy; 2022 Richard M. Sound technician. Všechna práva vyhrazena.</p>
+      <div class="socials">
+          <a href="https://www.facebook.com/richard.soundmaster" target="_blank">Instagram</a>
+          <a href="https://www.linkedin.com/in/richard-soundmaster" target="_blank">LinkedIn</a>
+          <a href="https://github.com/richard-soundmaster" target="_blank">GitHub</a>
+      </div>
+  </footer>
+</body>
+</html>
