@@ -1,0 +1,263 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: black;
+}
+
+
+
+
+header {
+    background-color: crimson; /* For browsers that do not support gradients */
+        background-image: linear-gradient(to bottom right, crimson, black);
+    padding: 20px;
+    text-align: center;
+    transition: transform .3s ease;
+}
+header h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: color .3s ease;
+    header: h1;
+}
+header h2 {
+    color: crimson;
+    font-size: 1.5rem;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    transition: color .3s ease;
+}
+header:hover h1, header:hover h2 {
+    color: crimson;
+}
+
+#wave{
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    padding: 10px;
+    filter: 0 0px 40px 0 crimson, 0 0px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+nav  div{
+    display: none;
+}
+nav *{
+    display:block; 
+    margin:0; 
+    padding:0
+}
+
+nav ul {
+    display: flex;
+}
+nav li {
+    width: 100%;
+    text-align: center;
+    border-left: 6px solid crimson;
+}
+    #leftOne{
+        border-left: none;
+    }
+
+nav a {
+    line-height:50px;
+    text-decoration:none;
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    transition-duration: 0.2s;
+}
+
+nav a:hover:not(.active) {
+    color: white;
+    background-color: crimson;
+    transform: scale(1, 1.1);
+    box-shadow: 0 0px 40px 0 crimson, 0 0px 40px 0 rgba(0, 0, 0, 0.19);
+}
+.active {
+    color: crimson;
+    background-color: white;
+    box-shadow: 0 0px 40px 0 white, 0 0px 40px 0 rgba(0, 0, 0, 0.19);
+    border-left: none;
+  }
+
+
+
+
+main {
+    padding: 20px;
+    color: white;
+}
+
+main h1 {
+    margin-bottom: 25px;
+    border-left: 6px solid crimson;
+    color:white;
+    background-image: linear-gradient(to left, rgba(255,0,0,0), crimson);
+}
+main h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+    #Prace{
+        color:crimson;
+        text-shadow: 0 0 3px crimson;
+    }
+
+main p {
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+main div {
+    width:24.79%;  
+    display:inline-block;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  #About_me{
+    color: white;
+    background-image: url("About_me.jpg");
+    background-color: #444;
+    background-position: center;
+  }
+  
+    #About_me:hover{
+        color: white;
+        background: crimson;
+        box-shadow: 0 0px 40px 0 crimson, 0 0px 40px 0 rgba(0, 0, 0, 0.19);
+    }
+
+  #Work{
+        color: white;
+        background-color: #444;
+        background-image: url("Work.jpg");
+        background-position: center;
+  }
+
+    #Work:hover{
+        color: white;
+        background: crimson;
+        box-shadow: 0 0px 40px 0 crimson, 0 0px 40px 0 rgba(0, 0, 0, 0.19);
+    }
+
+  #Reference{
+    color: white;
+    background-color: #444;
+    background-image: url("Reference.jpg");
+    background-position: center;
+  }
+
+    #Reference:hover{
+        color: white;
+        background: crimson;
+        box-shadow: 0 0px 40px 0 crimson, 0 0px 40px 0 rgba(0, 0, 0, 0.19);
+    }
+
+  #Contact{
+        color: white;
+        background-color: #444;
+        background-image: url("Contact.jpg");
+        background-position: center;
+  }
+
+    #Contact:hover{
+        color: white;
+        background: crimson;
+        box-shadow: 0 0px 40px 0 crimson, 0 0px 40px 0 rgba(0, 0, 0, 0.19);
+    }
+
+
+
+    #Gellnerka{
+        color: white;
+        background-color: #444;
+        background-image: url("Gellnerka.jpeg");
+        background-position: center;
+        filter: grayscale(100%);
+    }
+    #Gellnerka:hover{
+        color: white;
+        background-color: #444;
+        background-image: url("Gellnerka.jpeg");
+        background-position: center;
+        box-shadow: 0 0px 40px 0 white, 0 0px 40px 0 rgba(0, 0, 0, 0.19);
+        filter: grayscale(0%);
+    }
+
+    #Mendelka{
+        color: white;
+        background-color: #444;
+        background-image: url("Mendelka.jpg");
+        background-position: center;
+        filter: grayscale(100%);
+    }
+    #Mendelka:hover{
+        color: white;
+        background-color: #444;
+        background-image: url("Mendelka.jpg");
+        background-position: center;
+        box-shadow: 0 0px 40px 0 white, 0 0px 40px 0 rgba(0, 0, 0, 0.19);
+        filter: grayscale(0%);
+    }
+
+
+
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.socials {
+    margin-top: 20px;
+}
+
+.socials a {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.socials a:hover {
+    color: #f4f4f4;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    nav .hamburger {
+        display: block;
+    }
+
+    nav .nav-vertical {
+        display: block;
+    }
+
+    nav ul {
+        position: relative;
+        width: 100%;
+        background-color: #333;
+    }
+
+    nav ul li {
+        display: block;
+    }
+}
