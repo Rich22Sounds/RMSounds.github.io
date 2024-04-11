@@ -4,20 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="PersonalSite.css">
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <title>Richard M. Soundmaster</title>
-    <script>
-        $(document).ready(function(){
-            $("nav div").click(function(){
-                $("nav ul").slideToggle();
-            });
-        });
-    </script>
 </head>
 <body>
     <header>
-        <h1>Richard M. Sound technician</h1>
+        <img id="logo" src="Logo.png" alt="Italian Trulli"><h1>Richard M. Sound technician</h1>
         <h2>Recording | Mixing | Mastering | Creating</h2>
     </header>
     <nav>
@@ -32,11 +23,57 @@
 </nav>
     <main>
         <section>
-            <h1>Kontakty</h1>
-            <p>V případě zájmu mě kontaktujte.</p>
-            <p>Email: rich.22@seznam.cz</p>
-            <p>Telefon: +420 770 616 430</p>
+            <h1>Sociální sítě</h1>
+            <p>Facebook: </p>
+            <p>Youtube: </p>
+            <p>Instagram: </p>
+            <p>Github: https://github.com/Rich22Sounds</p>
+            <p>X: </p>
         </section>
+        
+
+        <div class="container">
+            <div class="content">
+              <div class="left-side">
+                <div class="phone details">
+                  <i class="fas fa-phone-alt"></i>
+                  <div class="topic">Telefon</div>
+                  <div class="text-one">+420 770 616 430</div>
+                </div>
+                <div class="email details">
+                  <i class="fas fa-envelope"></i>
+                  <div class="topic">Email</div>
+                  <div class="text-one">rich.22@seznam.cz</div>
+                </div>
+              </div>
+              <div class="right-side">
+                <div class="topic-text">Kontakt</div>
+                <p>V případě spolupráce či otázek mě nevájete kontaktovat</p>
+              
+                    <!-- Forms to contact us -->
+
+                   
+                
+                <form id="contactForm" action="PSKontakt.php" method="POST">
+                        <div class="input-box">
+                        <input name="name" type="text" id="name" placeholder="Jméno a přijmení" required />
+                        </div>
+                        <div class="input-box">
+                        <input name="email" type="email" id="email" placeholder="Email" required />
+                        </div>
+                        <div class="input-box message-box">
+                            <textarea name="message" type="text" id="message" placeholder="Zpráva" required ></textarea>
+                        </div>
+                        <div class="button">
+                        <input type="submit" value="Poslat" />
+                        </div>
+                </form>
+                <!-- Message -->
+                <div id="responseMessage"></div>
+
+            </div>
+            </div>
+          </div>
     </main>
     <footer>
         <p>&copy; 2022 Richard M. Sound technician. Všechna práva vyhrazena.</p>
@@ -46,5 +83,6 @@
             <a href="https://github.com/richard-soundmaster" target="_blank">GitHub</a>
         </div>
     </footer>
+    <script src="PersonalSite.js"></script>
 </body>
 </html>

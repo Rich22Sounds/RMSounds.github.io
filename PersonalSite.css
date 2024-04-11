@@ -6,16 +6,16 @@ body {
 
 
 
-
 header {
     background-color: crimson; /* For browsers that do not support gradients */
         background-image: linear-gradient(to bottom right, crimson, black);
+        text-align: center;
     padding: 20px;
-    text-align: center;
+    position: relative;
     transition: transform .3s ease;
 }
 header h1 {
-    color: white;
+  color: white;
     font-size: 3rem;
     margin-bottom: 0.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -33,14 +33,11 @@ header:hover h1, header:hover h2 {
     color: crimson;
 }
 
-#wave{
+#logo{
     position: absolute;
-    right: 0px;
-    width: 300px;
-    padding: 10px;
-    filter: 0 0px 40px 0 crimson, 0 0px 40px 0 rgba(0, 0, 0, 0.19);
+    height: 175px;
+    left: 70px;
 }
-
 
 
 nav  div{
@@ -90,17 +87,18 @@ nav a:hover:not(.active) {
 
 
 
-
 main {
     padding: 20px;
     color: white;
+    min-height: 479px;
 }
 
 main h1 {
-    margin-bottom: 25px;
-    border-left: 6px solid crimson;
+    margin-bottom: 20px;
+    padding: 5px;
+    padding-left: 15px;
+    border-left: 3px solid crimson;
     color:white;
-    background-image: linear-gradient(to left, rgba(255,0,0,0), crimson);
 }
 main h2 {
     font-size: 20px;
@@ -108,6 +106,7 @@ main h2 {
     margin-left: 15px;
 }
     #Prace{
+        text-align: center;
         color:crimson;
         text-shadow: 0 0 3px crimson;
     }
@@ -117,14 +116,11 @@ main p {
     margin-left: 30px;
 }
 
-main div {
+  #About_me{
     width:24.79%;  
     display:inline-block;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-
-  #About_me{
     color: white;
     background-image: url("About_me.jpg");
     background-color: #444;
@@ -138,7 +134,11 @@ main div {
     }
 
   #Work{
-        color: white;
+    width:24.79%;  
+    display:inline-block;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+    color: white;
         background-color: #444;
         background-image: url("Work.jpg");
         background-position: center;
@@ -151,6 +151,10 @@ main div {
     }
 
   #Reference{
+    width:24.79%;  
+    display:inline-block;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: white;
     background-color: #444;
     background-image: url("Reference.jpg");
@@ -164,7 +168,11 @@ main div {
     }
 
   #Contact{
-        color: white;
+    width:24.79%;  
+    display:inline-block;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+    color: white;
         background-color: #444;
         background-image: url("Contact.jpg");
         background-position: center;
@@ -176,14 +184,36 @@ main div {
         box-shadow: 0 0px 40px 0 crimson, 0 0px 40px 0 rgba(0, 0, 0, 0.19);
     }
 
-
-
+    .Education{
+        background-color: crimson;
+        box-shadow: 0 0px 40px 0 crimson, 0 0px 40px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 6px;
+        margin: 25px;
+    }
+    .Education h1{
+        margin-left: 50px;
+        color: black;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        transition: color .3s ease;
+        background-image: none;
+        border-left: none;
+    }
+    .Education div{
+        display:inline-block;
+        text-align: center;
+        margin: 37px;
+        width:45%; 
+        transition-duration: 0.2s;
+    }
     #Gellnerka{
         color: white;
+        border-radius: 6px;
         background-color: #444;
         background-image: url("Gellnerka.jpeg");
         background-position: center;
         filter: grayscale(100%);
+        text-shadow: 0 0 3px black;
     }
     #Gellnerka:hover{
         color: white;
@@ -192,14 +222,18 @@ main div {
         background-position: center;
         box-shadow: 0 0px 40px 0 white, 0 0px 40px 0 rgba(0, 0, 0, 0.19);
         filter: grayscale(0%);
+        transform: scale(1.1, 1.1);
+        text-shadow: 0 0 3px black;
     }
 
     #Mendelka{
         color: white;
+        border-radius: 6px;
         background-color: #444;
         background-image: url("Mendelka.jpg");
         background-position: center;
         filter: grayscale(100%);
+        text-shadow: 0 0 3px black;
     }
     #Mendelka:hover{
         color: white;
@@ -208,11 +242,158 @@ main div {
         background-position: center;
         box-shadow: 0 0px 40px 0 white, 0 0px 40px 0 rgba(0, 0, 0, 0.19);
         filter: grayscale(0%);
+        transform: scale(1.1, 1.1);
+        text-shadow: 0 0 3px black;
     }
 
+    .container{
+        margin-left: 50px;
+        width: 85%;
+        background-color: crimson;
+        box-shadow: 0 0px 40px 0 crimson, 0 0px 40px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 6px;
+        padding: 20px 60px 30px 40px;
+      }
+      .container .content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .container .content .left-side{
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        position: relative;
+      }
+      .content .left-side::before{
+        content: '';
+        position: absolute;
+        height: 70%;
+        width: 2px;
+        right: -15px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #afafb6;
+      }
+      .content .left-side .details{
+        margin: 14px;
+        text-align: center;
+      }
+      .content .left-side .details i{
+        font-size: 30px;
+        color: white;
+        margin-bottom: 10px;
+      }
+      .content .left-side .details .topic{
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .content .left-side .details .text-one{
+        font-size: 14px;
+        color: #afafb6;
+      }
+      .container .content .right-side{
+        width: 75%;
+        margin-left: 75px;
+      }
+      .content .right-side .topic-text{
+        font-size: 2em;
+        font-weight: 600;
+        color: black;
+      }
+      .right-side .input-box{
+        height: 50px;
+        width: 100%;
+        margin: 12px 0;
+      }
+      .right-side .input-box input,
+      .right-side .input-box textarea{
+        height: 100%;
+        width: 100%;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        background: #F0F1F8;
+        border-radius: 6px;
+        padding: 0 15px;
+        resize: none;
+      }
+      .right-side .message-box{
+        min-height: 110px;
+      }
+      .right-side .input-box textarea{
+        padding-top: 6px;
+      }
+      .right-side [type="button"]{
+        display: inline-block;
+        margin-top: 12px;
+      }
+      .right-side [type="submit"]{
+        color: #fff;
+        font-size: 18px;
+        outline: none;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 6px;
+        background: gray;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      [type="submit"]:hover{
+        color: black;
+        background: white;
+        box-shadow: 0 0px 40px 0 white, 0 0px 40px 0 rgba(0, 0, 0, 0.19);
+      }
+      
+      #responseMessage.success {
+        color: #008000; /* Green background for success */
+      }
+      
+      #responseMessage.error {
+        color: #FF0000; /* Red background for errors */
+      }
+      
+      #responseMessage.show {
+        opacity: 1;
+      }
 
-
-
+      @media (max-width: 950px) {
+        .container{
+          width: 90%;
+          padding: 30px 40px 40px 35px ;
+        }
+        .container .content .right-side{
+         width: 75%;
+         margin-left: 55px;
+      }
+      }
+      @media (max-width: 820px) {
+        .container{
+          margin: 40px 0;
+          height: 100%;
+        }
+        .container .content{
+          flex-direction: column-reverse;
+        }
+       .container .content .left-side{
+         width: 100%;
+         flex-direction: row;
+         margin-top: 40px;
+         justify-content: center;
+         flex-wrap: wrap;
+       }
+       .container .content .left-side::before{
+         display: none;
+       }
+       .container .content .right-side{
+         width: 100%;
+         margin-left: 0;
+       }
+      }
 
 
 footer {
@@ -241,7 +422,6 @@ footer {
 
 
 
-
 @media screen and (max-width: 768px) {
     nav .hamburger {
         display: block;
@@ -261,3 +441,4 @@ footer {
         display: block;
     }
 }
+
